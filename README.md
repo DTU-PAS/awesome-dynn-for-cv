@@ -1,10 +1,10 @@
-<h1 align="center">
-  
-# Awesome Dynamic Neural Networks Papers for Computer Vision and Sensor Fusion Applications
-[![arXiv](https://img.shields.io/badge/arXiv-2501.07451-b31b1b.svg)](https://arxiv.org/pdf/2501.07451)
+<h1 align="center">Awesome Dynamic Neural Networks Papers for Computer Vision and Sensor Fusion Applications</h1>
+<p align="center">
+  <a href="https://arxiv.org/pdf/2501.07451">
+    <img src="https://img.shields.io/badge/arXiv-2501.07451-b31b1b.svg" alt="arXiv">
+  </a>
+</p>
 
-</h1>
-  
 A curated collection of Dynamic Neural Networks (DyNN) papers in the context of Computer Vision and Sensor Fusion Applications. This repository gathers the most relevant research that explores adaptive, dynamic, and efficient neural networks in a variety of settings including token skimming, early exits, and dynamic routing. A section dedicated to Sensor Fusion is also present.
 
 A ArXiv preprint of the survey on the papers presented here can be found in [A Survey on Dynamic Neural Networks: from
