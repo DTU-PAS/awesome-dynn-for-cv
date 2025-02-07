@@ -10,6 +10,19 @@ A curated collection of Dynamic Neural Networks (DyNN) papers in the context of 
 A ArXiv preprint of the survey on the papers presented here can be found in [A Survey on Dynamic Neural Networks: from
 Computer Vision to Multi-modal Sensor Fusion](https://arxiv.org/pdf/2501.07451).
 
+## Citation
+
+If you find this repository useful in your research, please consider citing it:
+
+```bibtex
+@misc{montelloSurveyDynamicNeural2025,
+  author = {Montello, Fabio and G{\"u}ldenring, Ronja and Scardapane, Simone and Nalpantidis, Lazaros},
+  title = {A {{Survey}} on {{Dynamic Neural Networks}}: From {{Computer Vision}} to {{Multi-modal Sensor Fusion}}},
+  year = {2025},
+  publisher = {arXiv}
+}
+```
+
 ## Table of Contents
 
 - [Early Exit](#early-exit)
@@ -24,6 +37,7 @@ Computer Vision to Multi-modal Sensor Fusion](https://arxiv.org/pdf/2501.07451).
 
 |   Publication Year | Title                                                                                                                                                                                                                         | Main contribution                                                        | Type    | Code          |
 |-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|:--------------|:--------------|
+|               2024 | [DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution](https://arxiv.org/pdf/2411.02359)| Robotic Vision-Language-Action Model with situation-based early exits   | Application       | [:octocat:](https://github.com/yueyang130/DeeR-VLA) |
 |               2024 | [A multi-level collaborative self-distillation learning for improving adaptive inference efficiency](https://link.springer.com/10.1007/s40747-024-01572-3)                                                                    | Self distillation with a dynamic generation of the importance weights    | Method       | |
 |               2024 | [AdaDet: An Adaptive Object Detection System Based on Early-Exit Neural Networks](https://ieeexplore.ieee.org/document/10121781)                                                                                              | Early Exits for object detection                                         | Application  | |
 |               2024 | [EERO: Early Exit with Reject Option for Efficient Classification with limited budget](http://arxiv.org/abs/2402.03779)                                                                                                       | The exiting is formalized as a classification with a reject option       | Method       | |
