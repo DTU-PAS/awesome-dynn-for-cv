@@ -15,11 +15,16 @@ Computer Vision to Multi-modal Sensor Fusion](https://arxiv.org/pdf/2501.07451).
 If you find this repository useful in your research, please consider citing it:
 
 ```bibtex
-@misc{montelloSurveyDynamicNeural2025,
-  author = {Montello, Fabio and G{\"u}ldenring, Ronja and Scardapane, Simone and Nalpantidis, Lazaros},
-  title = {A {{Survey}} on {{Dynamic Neural Networks}}: From {{Computer Vision}} to {{Multi-modal Sensor Fusion}}},
-  year = {2025},
-  publisher = {arXiv}
+@article{MONTELLO2026105980,
+    title = {A survey on dynamic neural networks: From computer vision to multi-modal sensor fusion},
+    journal = {Image and Vision Computing},
+    volume = {170},
+    pages = {105980},
+    year = {2026},
+    issn = {0262-8856},
+    doi = {https://doi.org/10.1016/j.imavis.2026.105980},
+    url = {https://www.sciencedirect.com/science/article/pii/S0262885626000879},
+    author = {Fabio Montello and Ronja Güldenring and Simone Scardapane and Lazaros Nalpantidis}
 }
 ```
 
