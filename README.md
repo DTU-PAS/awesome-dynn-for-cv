@@ -1,5 +1,8 @@
 <h1 align="center">Awesome Dynamic Neural Networks Papers for Computer Vision and Sensor Fusion Applications</h1>
 <p align="center">
+  <a href="https://awesome.re">
+    <img src="https://awesome.re/badge.svg" alt="Awesome">
+  </a>
   <a href="https://doi.org/10.1016/j.imavis.2026.105980">
     <img src="https://img.shields.io/badge/DOI-10.1016/j.imavis.2026.105980-orange.svg" alt="DOI">
   </a>
@@ -39,9 +42,32 @@ If you find this repository useful in your research, please consider citing it:
 - [Sensor Fusion](#sensor-fusion)
 
 
+
+## Papers per Year
+
+```mermaid
+%%{init: {
+  'themeVariables': {
+    'xyChart': {
+      'plotColorPalette': '#b6d9a3, #a6c1eb, #ffd2a2, #fda29b'
+    }
+  }
+}}%%
+xychart-beta
+    title "Paper count per year, by category"
+    x-axis [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
+    y-axis "Papers" 0 --> 35
+    bar "Early Exit" [3, 7, 10, 11, 18, 20, 22, 29, 30, 32, 12]
+    bar "Dynamic Routing" [1, 6, 9, 4, 9, 10, 14, 19, 18, 25, 11]
+    bar "Token Skimming" [0, 1, 2, 1, 0, 3, 9, 15, 11, 18, 7]
+    bar "Sensor Fusion" [0, 1, 2, 1, 0, 0, 3, 4, 1, 7, 3]
+```
+
 ## Early Exit
+
 **Type column legend**: *Architecture* Structural network designs. *Method* Algorithmic innovations. *Application* Domain-specific implementations. 
 
+### 2023 - Present
 
 |   Publication Year | Title                                                                                                                                                                                                                         | Main contribution                                                        | Type    | Code          |
 |-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|:--------------|:--------------|
@@ -75,6 +101,12 @@ If you find this repository useful in your research, please consider citing it:
 |               2023 | [Window-Based Early-Exit Cascades for Uncertainty Estimation: When Deep Ensembles are More Efficient than Single Models](https://ieeexplore.ieee.org/document/10377106/)                                                      | Study of uncertainty estimation when it comes to Early Exit              | Method       | [:octocat:](https://github.com/Guoxoug/window-early-exit) |
 |               2023 | [LGViT: Dynamic Early Exiting for Accelerating Vision Transformer](http://arxiv.org/abs/2308.00255)                                                                                                                           | Self-distillation to train Early Exit ViT models                         | Method       | [:octocat:](https://github.com/falcon-xu/LGViT) |
 |               2023 | [Adaptive Computation with Elastic Input Sequence](http://arxiv.org/abs/2301.13195)                                                                                                                                           | ViT  which has also the ability to read and store tokens                 | Architecture | |
+
+<details>
+<summary>2020 - 2022</summary>
+
+|   Publication Year | Title                                                                                                                                                                                                                         | Main contribution                                                        | Type    | Code          |
+|-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|:--------------|:--------------|
 |               2022 | [Single-layer vision transformers for more accurate early exits with less overhead](https://www.sciencedirect.com/science/article/pii/S0893608022002532)                                                                      | Early exitsaudiovisual crowd counting with Transformer                   | Application  | |
 |               2022 | [Self-Distillation: Towards Efficient and Compact Neural Networks](https://ieeexplore.ieee.org/document/9381661/?arnumber=9381661)                                                                                            | Experiments with various self-distillation techniques                    | Method       | |
 |               2022 | [Boosted Dynamic Neural Networks](http://arxiv.org/abs/2211.16726)                                                                                                                                                            | Proposes a solution to the train-test mismatch problem                   | Method       | [:octocat:](https://github.com/SHI-Labs/Boosted-Dynamic-Networks) |
@@ -102,6 +134,14 @@ If you find this repository useful in your research, please consider citing it:
 |               2020 | [Differentiable Branching In Deep Networks for Fast Inference](https://ieeexplore.ieee.org/document/9054209/?arnumber=9054209)                                                                                                | Weighting method to estimate exit confidence                             | Method       | |
 |               2020 | [Early Exit or Not: Resource-Efficient Blind Quality Enhancement for Compressed Images](https://link.springer.com/10.1007/978-3-030-58517-4_17)                                                                               | Application on compressed image enanchement                              | Application  | [:octocat:](https://github.com/ryanxingql/rbqe) |
 |               2020 | [Resolution Adaptive Networks for Efficient Inference](https://ieeexplore.ieee.org/document/9157556/)                                                                                                                         | Processes images at a coarser scale first                                | Architecture | [:octocat:](https://github.com/yangle15/RANet-pytorch) |
+
+</details>
+
+<details>
+<summary>2019 and Earlier</summary>
+
+|   Publication Year | Title                                                                                                                                                                                                                         | Main contribution                                                        | Type    | Code          |
+|-------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|:--------------|:--------------|
 |               2019 | [Be Your Own Teacher: Improve the Performance of Convolutional Neural Networks via Self Distillation](https://ieeexplore.ieee.org/document/9008829/)                                                                          | Improves self-distillation loss                                          | Method       | [:octocat:](https://github.com/luanyunteng/pytorch-be-your-own-teacher) |
 |               2019 | [SEE: Scheduling Early Exit for Mobile DNN Inference during Service Outage](https://dl.acm.org/doi/10.1145/3345768.3355917)                                                                                                   | Frame dropping according to budget                                       | Application  | |
 |               2019 | [DynExit: A Dynamic Early-Exit Strategy for Deep Residual Networks](https://ieeexplore.ieee.org/document/9020551/?arnumber=9020551)                                                                                           | Dynamic loss-weight modification                                         | Method       | [:octocat:](https://github.com/jianqiaomo/mywebpage/issues/8) |
@@ -114,12 +154,14 @@ If you find this repository useful in your research, please consider citing it:
 |               2016 | [BranchyNet: Fast inference via early exiting from deep neural networks](https://ieeexplore.ieee.org/abstract/document/7900006)                                                                                               | First end-to-end network                                                 | Architecture | [:octocat:](https://github.com/kunglab/branchynet) |
 |               2016 | [Conditional Deep Learning for Energy-Efficient and Enhanced Pattern Recognition](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7459357)                                                                         | Seminal work                                                             | Architecture | |
 
+</details>
+
 
 ## Dynamic Routing
 
 **Type column legend**: *Path* Adaptive routing or processing paths in the network. *Block* Innovations involving layer or block-level adjustments. *MoE* Mixture of Experts. *Application* Domain-specific implementations. 
 
-
+### 2023 - Present
 
 |   Publication Year | Title                                                                                                                                                                                                                             | Main contribution                                                                                     | Type   | Code          |
 |-------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|:----------|:--------------|
@@ -145,6 +187,12 @@ If you find this repository useful in your research, please consider citing it:
 |   2023 | [SegBlocks: Block-Based Dynamic Resolution Networks for Real-Time Segmentation](https://ieeexplore.ieee.org/abstract/document/9744000)                                                                                            | Adjusts dynamically the processing resolution of image regions                              |  Path              | [:octocat:](https://github.com/thomasverelst/segblocks-segmentation-pytorch) |
 |   2023 | [GradMDM: Adversarial Attack on Dynamic Networks](https://ieeexplore.ieee.org/document/10089510/?arnumber=10089510)                                                                                                               | Studies adversarial attacks on dynamic models                                               |  Application       | [:octocat:](https://github.com/lingengfoo/GradMDM) |
 |   2023 | [DPACS: Hardware Accelerated Dynamic Neural Network Pruning through Algorithm-Architecture Co-design](https://dl.acm.org/doi/10.1145/3575693.3575728)                                                                             | Spatial and channel pruning hardware accelerator                                            |  Application       | [:octocat:](https://github.com/CASR-HKU/DPACS) |
+
+<details>
+<summary>2020 - 2022</summary>
+
+|   Publication Year | Title                                                                                                                                                                                                                             | Main contribution                                                                                     | Type   | Code          |
+|-------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|:----------|:--------------|
 |   2022 | [Dynamically Throttleable Neural Networks](https://arxiv.org/abs/2011.02836)                                                                                                                                                      | Self-regulate computations according to performance target and resources available          |  Path              | [:octocat:](https://github.com/liuhengyue/dtnn) |
 |   2022 | [M3ViT: Mixture-of-Experts Vision Transformer for Efficient Multi-task Learning with Model-Accelerator Co-design](nan)                                                                                                            | Method to accelerate MoE for multi-task ViT                                                 |  MoE               | [:octocat:](https://github.com/VITA-Group/M3ViT) |
 |   2022 | [AdaViT: Adaptive Vision Transformers for Efficient Image Recognition](https://ieeexplore.ieee.org/document/9879366/)                                                                                                             | Block skipping in Transformer                                                               |  Block             | [:octocat:](https://github.com/MengLcool/AdaViT) |
@@ -166,6 +214,14 @@ If you find this repository useful in your research, please consider citing it:
 |   2020 | [Learning to Generate Content-Aware Dynamic Detectors](http://arxiv.org/abs/2012.04265)                                                                                                                                           | Models the relationship between the sample space and the latent routing space               |  Path              | |
 |   2020 | [Biased Mixtures of Experts: Enabling Computer Vision Inference Under Data Transfer Limitations](https://ieeexplore.ieee.org/document/9133338/?arnumber=9133338)                                                                  | MoE with inductive prior bias to certain experts                                            |  MoE               | |
 |   2020 | [Fractional Skipping: Towards Finer-Grained Dynamic CNN Inference](https://ojs.aaai.org/index.php/AAAI/article/view/6025)                                                                                                         | Layer-wise adaptive quantization and skip                                                   |  Block             | [:octocat:](https://github.com/Torment123/DFS) |
+
+</details>
+
+<details>
+<summary>2019 and Earlier</summary>
+
+|   Publication Year | Title                                                                                                                                                                                                                             | Main contribution                                                                                     | Type   | Code          |
+|-------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|:----------|:--------------|
 |   2019 | [You Look Twice: GaterNet for Dynamic Filter Selection in CNNs](https://ieeexplore.ieee.org/document/8954158/)                                                                                                                    | Global gating module for channel selection                                                  |  Block             | |
 |   2019 | [Channel Gating Neural Networks](http://arxiv.org/abs/1805.12549)                                                                                                                                                                 | Learn specialized convolutional kernels as combination of learnt experts                    |  MoE               | |
 |   2019 | [Dynamic Channel Pruning: Feature Boosting and Suppression](https://arxiv.org/abs/1810.05331)                                                                                                                                     | Skip negligible input and output channels                                                   |  Block             | [:octocat:](https://github.com/YOUSIKI/PyTorch-FBS) |
@@ -183,11 +239,14 @@ If you find this repository useful in your research, please consider citing it:
 |   2017 | [Changing Model Behavior at Test-Time Using Reinforcement Learning](https://arxiv.org/abs/1702.07780)                                                                                                                             | Combination of MoE and Early Exits                                                          |  MoE               | |
 |   2016 | [Network of Experts for Large-Scale Image Categorization](https://arxiv.org/abs/1604.06119)                                                                                                                                       | Introduces MoE architecture for CNN                                                         |  MoE               | [:octocat:](https://github.com/karim-ahmed/nofe-caffe) |
 
+</details>
+
 
 ## Token skimming
 
 **Type column legend** *Drop* Dynamic token removal or skipping for efficiency. *Merge* Methods for aggregating similar tokens. *Application* Domain-specific implementations. 
 
+### 2023 - Present
 
 |   Publication Year | Title                                                                                                                                                                               | Main contribution                                                                                 | Type   | Code          |
 |-------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|:----------|:--------------|
@@ -197,7 +256,7 @@ If you find this repository useful in your research, please consider citing it:
 |  2026 | [Token Pruning for In-Context Generation in Diffusion Transformers (ToPi)](https://arxiv.org/abs/2602.01609)                                                                           | Training-free pruning of reference-context tokens for in-context image-to-image DiT generation (ICML 2026) | Application | |
 |  2025 | [CubistMerge: Spatial-Preserving Token Merging for Diverse ViT Backbones](https://arxiv.org/abs/2509.21764)                                                                            | Spatial-preserving merging that generalizes across ViT backbones, including windowed attention | Merge | |
 |  2025 | [FastVGGT: Training-Free Acceleration of Visual Geometry Transformer](https://arxiv.org/abs/2509.02560)                                                                                | Training-free token merging/pruning applied to visual geometry transformers for 3D tasks | Application | |
-|  2025 | [ClustViT: Clustering-based Token Merging for Semantic Segmentation](https://arxiv.org/pdf/2510.01948) | Leverage image segmentation masks to merge tokens based on semantic content | Merge |[:octocat:](https://github.com/DTU-PAS/clustvit) |
+|  2025 | [ClustViT: Clustering-based Token Merging for Semantic Segmentation](https://arxiv.org/pdf/2510.01948) | Leverage image segmentation masks to merge tokens based on semantic content | Merge | |
 |  2025 | [Accelerating Vision Transformers with Adaptive Patch Sizes](https://arxiv.org/html/2510.18091v1#:~:text=We%20presented%20Adaptive%20Patch%20Transformer,larger%20models%20and%20higher%20resolutions.)                                                          | Adaptive token size based on image entropy                                                         | Other | [:octocat:](https://github.com/rccchoudhury/apt)|
 |  2025 | [Not All Tokens Matter All The Time: Dynamic Token Aggregation Towards Efficient Detection Transformers](https://openreview.net/forum?id=Cr9qfD3qRc)                                                                                                             | Controls the token sparsity through the use of the importance distribution for object detection    | Application      |  |
 |  2025 | [ToMA: Token Merge with Attention for Diffusion Models](https://openreview.net/forum?id=51l8tvuIxo)                                                                                                                                                              | Token merging for diffusion transformers with GPU friendly operations                              | Application      |  |
@@ -227,6 +286,12 @@ If you find this repository useful in your research, please consider citing it:
 |  2023 | [Efficient Video Action Detection with Token Dropout and Context Refinement](https://ieeexplore.ieee.org/document/10377668/)                                                        | Token dropout for Video Task Recognition                                                | Application      | [:octocat:](https://github.com/MCG-NJU/EVAD) |
 |  2023 | [Token Merging for Fast Stable Diffusion](https://ieeexplore.ieee.org/document/10208676/)                                                                                           | Applies ToMe algorithm to diffusion models                                              | Merge    | [:octocat:](https://github.com/dbolya/tomesd) |
 |  2023 | [Token Merging: Your ViT But Faster](http://arxiv.org/abs/2210.09461)                                                                                                               | Gradually combines similar tokens with a custom matching algorithm                      | Merge    |  [:octocat:](https://github.com/facebookresearch/ToMe) |
+
+<details>
+<summary>2020 - 2022</summary>
+
+|   Publication Year | Title                                                                                                                                                                               | Main contribution                                                                                 | Type   | Code          |
+|-------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|:----------|:--------------|
 |  2022 | [A-ViT: Adaptive Tokens for Efficient Vision Transformer](https://ieeexplore.ieee.org/document/9880220/)                                                                            | Halt tokens by accumulative importance, with bias target exit depth.                    |  Drop     | [:octocat:](https://github.com/NVlabs/A-ViT) |
 |  2022 | [Evo-ViT: Slow-Fast Token Evolution for Dynamic Vision Transformer](https://ojs.aaai.org/index.php/AAAI/article/view/20202)                                                         | The least important tokens are summarized by a representative token                     | Merge    | [:octocat:](https://github.com/YifanXu74/Evo-ViT) |
 |  2022 | [Dynamic Transformer Networks](https://dynn-icml2022.github.io/papers/paper_19.pdf)                                                                                                                                                 | At each block, an function evaluates which tokens should attend it                      |  Drop     |  |
@@ -237,7 +302,13 @@ If you find this repository useful in your research, please consider citing it:
 |  2021 | [DynamicViT: Efficient Vision Transformers with Dynamic Token Sparsification](https://papers.neurips.cc/paper_files/paper/2021/hash/747d3443e319a22747fbb873e8b2f9f2-Abstract.html) | Pruning of redundant tokens progressively and dynamically                               |  Drop     | [:octocat:](https://github.com/raoyongming/DynamicViT) |
 |  2021 | [Chasing Sparsity in Vision Transformers: An End-to-End Exploration](https://proceedings.neurips.cc/paper_files/paper/2021/hash/a61f27ab2165df0e18cc9433bd7f27c5-Abstract.html)     | Combination of methods to induce token sparsity                                         |  Drop     | [:octocat:](https://github.com/VITA-Group/SViTE) |
 
+</details>
+
+
 ## Sensor Fusion
+
+
+### 2023 - Present
 
 |   Publication Year | Title                                                                                                                                                                      | Main contribution                                                                                     | Task                  | Code          |
 |-------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|:----------------------|:--------------|
@@ -256,13 +327,30 @@ If you find this repository useful in your research, please consider citing it:
 |   2023 | [MIXO: Mixture Of Experts-Based Visual Odometry for Multicamera Autonomous Systems](https://ieeexplore.ieee.org/document/10023533/?arnumber=10023533)                      | Local optimal expert selection for multicamera visual odometry                              | Odometry              | |
 |   2023 | [Stress Detection Using Context-Aware Sensor Fusion From Wearable Devices](https://ieeexplore.ieee.org/document/10097874/?arnumber=10097874)                               | context-aware sensor fusion for stress detection on embedded devices                        | Stress Detection                   | |
 |   2023 | [CARMA: Context-Aware Runtime Reconfiguration for Energy-Efficient Sensor Fusion](nan)                                                                                     | Fusion approach  to dynamically reconfigure FPGA at runtime                                 | Any                   | |
+
+<details>
+<summary>2020 - 2022</summary>
+
+|   Publication Year | Title                                                                                                                                                                      | Main contribution                                                                                     | Task                  | Code          |
+|-------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|:----------------------|:--------------|
 |   2022 | [Romanus: Robust Task Offloading in Modular Multi-Sensor Autonomous Driving Systems](http://arxiv.org/abs/2207.08865)                                                      | Dynamic offload of sensor process to edge computing units                                   | Object Detection      | |
 |   2022 | [EcoFusion: Energy-Aware Adaptive Sensor Fusion for Efficient Autonomous Vehicle Perception](nan)                                                                          | Adds the environmental context to dynamic sensor fusion                                     | Object Detection      | |
 |   2022 | [HydraFusion: Context-Aware Selective Sensor Fusion for Robust and Efficient Autonomous Vehicle Perception](https://ieeexplore.ieee.org/abstract/document/9797530)         | Sensor fusion selection to perform Object Detection                                         | Object Detection      | [:octocat:](https://github.com/AICPS/hydrafusion) |
+
+</details>
+
+<details>
+<summary>2019 and Earlier</summary>
+
+|   Publication Year | Title                                                                                                                                                                      | Main contribution                                                                                     | Task                  | Code          |
+|-------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|:----------------------|:--------------|
 |   2019 | [Selective Sensor Fusion for Neural Visual-Inertial Odometry](http://arxiv.org/abs/1903.01534)                                                                             | Selective fusion of images and IMU                                                          | Odometry              | [:octocat:](https://github.com/changhao-chen/selective_sensor_fusion) |
 |   2018 | [Modular Sensor Fusion for Semantic Segmentation](https://ieeexplore.ieee.org/abstract/document/8593786)                                                                   | Late fusion approachfor semantic segmentation from the output of separately trained experts | Semantic Segmentation | [:octocat:](https://github.com/ethz-asl/modular_semantic_segmentation) |
 |   2018 | [Estimation of Steering Angle and Collision Avoidance for Automated Driving Using Deep Mixture of Experts](https://ieeexplore.ieee.org/document/8485411/?arnumber=8485411) | Road scenes and driving patterns based fusion for steering angle estimation                 | Steering Prediction   | |
 |   2017 | [AdapNet: Adaptive Semantic Segmentation in Adverse Environmental Conditions](https://ieeexplore.ieee.org/document/7989540)                                                                                         | Convolutional MoE to dynamically fuse different modalities                                  | Semantic Segmentation | [:octocat:](https://github.com/DeepSceneSeg/AdapNet) |
+
+</details>
+
 
 ## Contributions
 Contributions of new awesome DyNN for CV and SF resources are very welcome! Please submit a pull request; if you add a new entry, please give a very brief explanation why you think it should be added.
